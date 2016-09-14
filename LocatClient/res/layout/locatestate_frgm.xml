@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f5ec" >
+    
+    <TextView
+        android:id="@+id/tv_state2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lv_locat"
+        android:layout_below="@+id/tv_state1"
+        android:text="概况列表"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+    
+    <ListView 
+        android:id="@+id/lv_locat"
+        android:layout_margin="5dp"
+        android:layout_below="@id/tv_state2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    </ListView>
+
+    
+
+    <TextView
+        android:id="@+id/tv_state1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_state2"
+        android:layout_alignParentTop="true"
+        android:text="定位概况"
+        android:textColor="#000000"
+        android:textSize="25sp" />
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f5ec" >
+     
+     <TextView
+         android:id="@+id/tv_state1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/lv_blacklist"
+         android:layout_alignParentTop="true"
+         android:text="白名单"
+         android:textColor="#000000"
+         android:textSize="25sp" />
+
+     <TextView
+         android:id="@+id/tv_state2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/tv_state1"
+         android:layout_below="@+id/tv_state1"
+         android:text="白名单列表"
+         android:textColor="#000000"
+         android:textSize="20sp" />
+     
+        <ListView
+        android:id="@+id/lv_blacklist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_state2"
+        android:layout_margin="5dp" >
+   	 </ListView>
+
+        <Button
+            android:id="@+id/but_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_state2"
+            android:layout_alignParentRight="true"
+            android:text="刷新列表" />
+    
+</RelativeLayout>

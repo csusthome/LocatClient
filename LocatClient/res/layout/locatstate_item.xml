@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+	
+    <TextView 
+        android:id="@+id/tv_funcname"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="28dp"
+        android:layout_weight="2"
+        android:textSize="20sp"
+        android:text="功能名"
+        android:textColor="#000000"/>
+
+    <TextView 
+        android:id="@+id/tv_data"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:layout_weight="1"
+        android:textSize="20sp"
+        android:text="数据"
+        android:textColor="#000000"/>
+    
+</LinearLayout>

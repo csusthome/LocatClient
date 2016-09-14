@@ -1,0 +1,95 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    xmlns:tools="http://schemas.android.com/tools"  
+    android:id="@+id/drawer_main"  
+    android:layout_width="match_parent"  
+    android:layout_height="match_parent" 
+    >
+     
+	<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <!-- 主内容区  -->
+    
+    <fragment
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/frgm_title" 
+        android:name="com.myy.locatclient.fragment.TitleFragment"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        />
+    
+    
+    <!-- 功能区 -->
+    <GridView 
+        android:layout_below="@id/frgm_title"
+        android:id="@+id/gv_actionbar"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+		android:layout_height="100dp"
+		android:background="#333333"
+		android:orientation="horizontal"
+		android:verticalSpacing="30dp"
+		android:numColumns="3"
+		android:columnWidth="60dp"
+		android:horizontalSpacing="20dp"
+		></GridView>
+    <!-- 
+    <fragment 
+        android:layout_below="@id/frgm_title"
+        android:id="@+id/function_frgm"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+		android:layout_height="100dp"
+		android:background="#99CCCC"
+		android:orientation="horizontal"
+		android:name="com.example.locatchild.fragment.MainActionBarFragment"
+        /> -->
+        
+    
+    
+    <TextView 
+        android:layout_below="@id/gv_actionbar"
+        android:id="@+id/tv_statetitle"
+        android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text ="状态概括"
+		android:textSize ="20sp"
+        />
+    
+    	
+    
+    
+    <android.support.v4.view.ViewPager
+       android:id="@+id/vp_content"
+       android:layout_below="@id/tv_statetitle"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       >
+    </android.support.v4.view.ViewPager>
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"  
+        android:layout_height="20dp" 
+        android:orientation="horizontal"
+        android:layout_below="@id/vp_content"
+        android:id="@+id/ll_page_indicator"
+        android:layout_marginTop="-20dp"
+        android:layout_centerHorizontal="true"
+        ></LinearLayout>
+    
+	</RelativeLayout>
+
+	
+	<!-- 侧滑菜单 -->
+	<fragment
+	    android:id="@+id/leftmenu_frgm"
+   		android:name="com.myy.locatclient.fragment.LeftMenuFragment"
+   		android:layout_gravity="left"
+   		android:layout_width = "250dp"
+   		android:layout_height = "match_parent"/>
+	
+</android.support.v4.widget.DrawerLayout>

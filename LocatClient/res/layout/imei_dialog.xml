@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F0FFFF"  >
+    <TextView
+        android:id="@+id/blank"
+        android:layout_alignParentTop="true"
+	    android:layout_width="match_parent"
+	    android:layout_height="60dp"
+	    android:text="IMEI绑定"
+	    android:textSize="24sp"
+	    android:textColor="#ffffff"
+	    android:gravity="center"
+	    android:background="#000000"/>
+     <TableLayout
+        android:id="@+id/tablelayout"
+        android:layout_below="@id/blank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#E0FFFF"
+        android:stretchColumns="1">
+       <TableRow >
+	<TextView 
+	    android:id="@+id/IMEI"
+	    android:layout_width="wrap_content"
+	    android:layout_height="60dp"
+	    android:layout_marginLeft="40dp"
+	    android:layout_marginRight="10dp"
+	    android:gravity="center_vertical"
+	    android:text="本机IMEI码"
+	    android:textSize="18sp"/>
+
+	<TextView
+	    android:id="@+id/IMEI_code"
+	    android:layout_width="wrap_content"
+	    android:layout_height="60dp"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginRight="30dp"
+	    android:gravity="center_vertical"
+	    android:paddingBottom="15dp"
+	    android:paddingTop="15dp"
+	    android:text="1234567890"
+	    android:textColor="#0000CD" />
+
+		</TableRow>
+		
+       <TableRow >
+           <TextView 
+               	android:layout_width="wrap_content"
+               	android:layout_height="60dp"
+               	android:paddingTop="15dp"
+	    		android:paddingBottom="15dp"
+	    		android:layout_marginLeft="40dp"
+	    		android:layout_marginRight="10dp"
+	    		android:gravity="center_vertical"
+	    		android:text="验证码"
+	    		android:textSize="18sp"/>
+	    	<TextView 
+	        	android:id="@+id/identify_code"
+	        	android:layout_width="wrap_content"
+	    		android:layout_height="60dp"
+	    		android:paddingTop="15dp"
+	    		android:paddingBottom="15dp"
+	    		android:layout_marginLeft="10dp"
+	    		android:layout_marginRight="30dp"
+	    		android:gravity="center_vertical"
+	    		android:text="007008"
+	    		android:textColor="#EE0000"/>
+	    
+   		
+	    </TableRow>
+	</TableLayout>
+		<Button 
+	        android:id="@+id/refresh"
+	        android:layout_below="@id/tablelayout"
+	        android:gravity="center"
+	        android:layout_width="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:paddingLeft="10dp"
+	        android:paddingRight="10dp"
+	    	android:layout_height="25dp"
+	    	android:layout_marginTop="15dp"
+	    	android:layout_marginLeft="10dp"
+	   		android:layout_marginRight="30dp"
+	   		android:background="#00ff00"
+	   		android:text="获取验证码"
+	   		android:textSize="14sp"/>
+		<ImageView 
+		    android:layout_below="@id/refresh"
+		    android:layout_width="match_parent"
+		    
+		    android:layout_height="20dp"/>
+</RelativeLayout>

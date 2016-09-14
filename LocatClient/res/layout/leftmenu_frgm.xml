@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background = "#CCCCCC"
+	>
+    
+    <RelativeLayout 
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#333333"
+        android:orientation="horizontal">
+        
+        <ImageView 
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/img_menutitle"
+        android:layout_height="40dp"
+        android:layout_width="40dp"
+        android:src="@drawable/settings_1"
+        />
+        
+        <TextView 
+        android:layout_alignParentBottom="true"
+        android:id="@+id/sildmenu_title"
+        android:layout_toRightOf="@id/img_menutitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:textSize="25sp"
+        android:textColor="#ffffff"
+        android:text="定位功能开关"
+        />
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_below="@id/rl_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        >
+     <ListView 
+         android:id="@+id/lv_func"
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         
+         ></ListView>
+    
+    
+    
+    </RelativeLayout>
+</RelativeLayout>
